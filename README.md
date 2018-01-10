@@ -33,3 +33,17 @@
      meio de comunicação externa
      Ex.: e-mail, mensagem, telefone etc. A troca de mensagens não será via app
 
+## Condições do MVP 1
+
+● O anunciante é responsável por retirar o anúncio (Como na OLX)
+
+● Não existe um grau de confiabilidade nos anúncios
+
+● Só podem anunciar pessoas que fazem o cadastro com o Facebook
+
+● Só podem ser anunciados medicamentos contidos na lista fornecida pelo 
+  cliente
+
+● Os anúncios não expiram
+
+● O contato entre os interessados é externo ao aplicativo
