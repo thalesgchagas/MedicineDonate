@@ -2,9 +2,34 @@
 
 ## MVP1
 ● Design e interface do aplicativo
+
    ○ Interface que atenda todas a funcionalidades propostas no MVP 1
+   
 ● Login com o Facebook
+
    ○ Permitir que o usuário faça o cadastro no aplicativo utilizando o Facebook
+   
    ○ Armazenar os dados do usuário e forma de contato - a primeira entrega não 
      inclui grau de confiabilidade para troca
+     
 ● Só será possível anunciar troca de medicamentos pré-cadastrados no aplicativo
+
+● CRUD de anúncios
+
+   ○ Informar medicamento no anúncio
+   
+   ○ Buscar medicamentos anunciados no aplicativo a partir do nome do 
+     medicamento - para o MVP 1 busca exibirá todos os medicamentos 
+     anunciados
+     
+   ○ Informar condições do medicamento anunciado
+
+   ○ Remover anúncios
+
+● Simulação de troca de medicamentos
+
+   ○ Fornecer ao usuário o contato do anunciante após demonstrar interesse no 
+     medicamento anunciado - o usuário entra em contato com o anunciante por 
+     meio de comunicação externa
+     Ex.: e-mail, mensagem, telefone etc. A troca de mensagens não será via app
+
