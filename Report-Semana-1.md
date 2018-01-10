@@ -3,6 +3,10 @@
 
 ## Atividades desenvolvidas
 
+Adicionar os dados da planilha de medicamentos em uma base de dados
+
+
+
 ## Impedimentos
 
 ## Status da atividade
