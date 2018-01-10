@@ -13,11 +13,12 @@
 
 ## Impedimentos
 
+1-Necessário conclusão de 3 e 4
+
+2-Necessário conclusão de 3
+
+
 ## Status da atividade
-
-1-Em progresso
-
-2-Em progresso
 
 3-Em progresso
 
