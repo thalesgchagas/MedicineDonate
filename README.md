@@ -50,6 +50,8 @@
 
 # Obeservações
 
-O aplicativo será desenvolvido para Android.
+O aplicativo será desenvolvido para Android
 
-Não será disponibilizado na PlayStore, a aprensetação será feita em um APK rodando no dispositivo
+Não será disponibilizado na PlayStore
+
+A aprensetação será feita em um APK rodando no dispositivo
