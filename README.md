@@ -47,3 +47,9 @@
 ● Os anúncios não expiram
 
 ● O contato entre os interessados é externo ao aplicativo
+
+# Obeservações
+
+O aplicativo será desenvolvido para Android.
+
+Não será disponibilizado na PlayStore, a aprensetação será feita em um APK rodando no dispositivo
