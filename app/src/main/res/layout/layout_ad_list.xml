@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:text="Nome do medicamento"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.10" />
+<!--
+    <TextView
+        android:id="@+id/textViewContent"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:text="Apresentação"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.20" />
+
+    <TextView
+        android:id="@+id/textViewLab"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:text="Laboratório responsável"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.30" />
+
+    <TextView
+        android:id="@+id/textViewComponent"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:text="Princípio ativo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.40" />
+
+    <TextView
+        android:id="@+id/textViewLabel"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:text="Tarja"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.50" />
+
+    <TextView
+        android:id="@+id/textViewType"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:text="Tipo de medicamento"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.60" />
+-->
+    <TextView
+        android:id="@+id/textViewExpirationDate"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:text="Prazo de validade"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.70" />
+
+    <TextView
+        android:id="@+id/textViewQty"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:text="Quantidade"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.80" />
+
+</android.support.constraint.ConstraintLayout>

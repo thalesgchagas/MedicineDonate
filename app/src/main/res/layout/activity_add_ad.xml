@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.our_software_factory.medicinedonate.AddAdActivity">
+
+    <AutoCompleteTextView
+        android:id="@+id/medicineNameAutoCompleteTextView"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="Insira o nome do medicamento"
+        android:gravity="left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.10" />
+
+    <TextView
+        android:id="@+id/expirationDateTextView"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="Validade"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.30" />
+
+    <Button
+        android:id="@+id/getDateButton"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:onClick="datePicker"
+        android:text="Escolha a data"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.40" />
+
+    <EditText
+        android:id="@+id/qtyTextView"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="Quantidade"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.60" />
+
+    <Button
+        android:id="@+id/saveAdButton"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:text="Cadastrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.90" />
+
+</android.support.constraint.ConstraintLayout>
