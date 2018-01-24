@@ -28,12 +28,6 @@ public class ViewAdActivity extends AppCompatActivity {
 
         databaseAds = FirebaseDatabase.getInstance().getReference("anuncios");
 
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-
         //attaching value event listener
         databaseAds.addValueEventListener(new ValueEventListener() {
             @Override
