@@ -55,9 +55,27 @@ Item 4 concluído
 
 ## Atividades desenvolvidas
 
+1-Login com facebook
+
+2-Cadastro de anúncio e registro na base executado
+
+3-Início da atividade de exibição de anúncios cadastrados
+
 ## Impedimentos
 
+Item 1- necessário recuperar dados de login
+
+Item 2- nome do medicamento anunciado ainda não é filtrado de acordo com os medicamentos fornecidos
+
+Item 3- Problemas para exibir o objeto
+
 ## Status da atividade
+
+Item 1- ação de login concluida
+
+Item 2- cadastro executado apenas para nome, prazo de validade e quantidade
+
+Item 3- listview criada, necessário incluir os objetos de anúncio
 
 # Semana 4
 
