@@ -10,6 +10,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ViewAdActivity extends AppCompatActivity {
@@ -24,9 +25,17 @@ public class ViewAdActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_ad);
 
+        databaseAds = FirebaseDatabase.getInstance().getReference("anuncios");
+
         listViewAds = (ListView) findViewById(R.id.listViewAd);
 
-        databaseAds = FirebaseDatabase.getInstance().getReference("anuncios");
+        adList = new ArrayList<>();
+    }
+
+    @Override
+    protected void onStart()
+    {
+        super.onStart();
 
         //attaching value event listener
         databaseAds.addValueEventListener(new ValueEventListener() {

@@ -22,7 +22,7 @@ public class Ad {
         return expirationDate;
     }
 
-    public String getQty() {
+    public String getMedicineQty() {
         return medicineQty;
     }
 }
