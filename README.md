@@ -48,10 +48,10 @@
 
 ● O contato entre os interessados é externo ao aplicativo
 
-# Obeservações
+# Observações
 
 O aplicativo será desenvolvido para Android
 
 Não será disponibilizado na PlayStore
 
-A aprensetação será feita em um APK rodando no dispositivo
+A apresentação será feita em um APK rodando no dispositivo
