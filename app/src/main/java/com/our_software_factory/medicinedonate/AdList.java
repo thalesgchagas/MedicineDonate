@@ -44,7 +44,7 @@ public class AdList extends ArrayAdapter<Ad> {
 //        textViewLabel.setText(ad.getLabel());
 //        textViewType.setText(ad.getYpe());
         textViewExpirationDate.setText(ad.getExpirationDate());
-        textViewQty.setText(ad.getMedicineQty());
+        textViewQty.setText(ad.getQty());
 
         return listViewItem;
     }

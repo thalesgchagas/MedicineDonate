@@ -1,17 +1,23 @@
 package com.our_software_factory.medicinedonate;
 
 public class Ad {
+    private String adId;
     private String medicineName;
     private String expirationDate;
-    private String medicineQty;
+    private String qty;
 
     public Ad(){}
 
-    public Ad(String medicineName, String expirationDate, String medicineQty)
+    public Ad(String adId, String medicineName, String expirationDate, String qty)
     {
+        this.adId = adId;
         this.medicineName = medicineName;
         this.expirationDate = expirationDate;
-        this.medicineQty = medicineQty;
+        this.qty = qty;
+    }
+
+    public String getAdId() {
+        return adId;
     }
 
     public String getMedicineName() {
@@ -22,7 +28,7 @@ public class Ad {
         return expirationDate;
     }
 
-    public String getMedicineQty() {
-        return medicineQty;
+    public String getQty() {
+        return qty;
     }
 }

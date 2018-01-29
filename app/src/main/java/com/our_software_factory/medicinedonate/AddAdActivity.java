@@ -56,7 +56,6 @@ public class AddAdActivity extends AppCompatActivity implements DatePickerDialog
     public void datePicker(View view)
     {
         DatePickerFragment datePickerFragment = new DatePickerFragment();
-        //  TODO datePickerFragment.show(getSupportFragmentManager(), "date");
         datePickerFragment.show(getSupportFragmentManager(), "date");
     }
 
@@ -86,8 +85,8 @@ public class AddAdActivity extends AppCompatActivity implements DatePickerDialog
         databaseAds = FirebaseDatabase.getInstance().getReference("anuncios");
 
         //getting views
-        expirationDateTextView = (TextView) findViewById(R.id.expirationDateTextView);
         medicineNameAutoCompleteTextView = (AutoCompleteTextView) findViewById(R.id.medicineNameAutoCompleteTextView);
+        expirationDateTextView = (TextView) findViewById(R.id.expirationDateTextView);
         qtyTextView = (TextView) findViewById(R.id.qtyTextView);
 
         saveAdButton = (Button) findViewById(R.id.saveAdButton);
@@ -149,7 +148,7 @@ public class AddAdActivity extends AppCompatActivity implements DatePickerDialog
         String id = databaseAds.push().getKey();
 
         //creating an Ad Object
-        Ad ad = new Ad(medicineName, expirationDate, medicineQty);
+        Ad ad = new Ad(id, medicineName, expirationDate, medicineQty);
 
         //saving the Ad
         databaseAds.child(id).setValue(ad);
