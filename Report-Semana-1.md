@@ -81,9 +81,21 @@ Item 3- listview criada, necessário incluir os objetos de anúncio
 
 ## Atividades desenvolvidas
 
+Deleção de anúncio.
+Edição ´de anúncio.
+Capturar os dados do usuário ao fazer login com Facebook para autenticar e registrar o usuário no Firebase.
+
 ## Impedimentos
 
+Dificuldades para modelar o usuário, acessar as informações públicas do Facebook e atribuir a um objeto.
+Problemas para resolver conflitos de dependências do projeto.
+Dificuldades para retornar a data para um objeto de Anúncio quando alterada.
+
 ## Status da atividade
+
+Deleção concluída.
+Edição permanece com o problema da data de validade do medicamento em branco durante a alteração.
+Captura de dados em andamento.
 
 # Semana 5
 
