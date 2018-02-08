@@ -101,6 +101,8 @@ Captura de dados em andamento.
 
 ## Atividades desenvolvidas
 
+Nenhuma atividade desenvolvida
+
 ## Impedimentos
 
 ## Status da atividade
