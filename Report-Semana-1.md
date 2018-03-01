@@ -104,3 +104,26 @@ Uso do app mediante conexão no facebook
 Checagem de conexão do usuário ao iniciar uma atividade do app.
 ## Status da atividade
 Permitir que somente pessoas conectadas via facebook acessem as funcionalidades do app em desenvolvimento. 
+
+# Semana 6
+
+## Atividades desenvolvidas
+
+Nenhuma atividade desenvolvida
+
+# Semana 7
+
+## Atividades desenvolvidas
+
+Divisão das visualisações em abas
+Autenticação com Facebook
+Salvar dados do usuário na base
+
+# Semana 8
+
+## Atividades desenvolvidas
+
+Exibição da lista de anúncios em abas
+Adicionada aba para anúncios pessoais 
+Adicionada nova tela para tela de cadastro de anúncios
+

@@ -8,73 +8,21 @@
         android:id="@+id/textViewName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nome do medicamento"/>
-<!--
-    <TextView
-        android:id="@+id/textViewContent"
-        android:layout_width="350dp"
-        android:layout_height="30dp"
-        android:text="Apresentação"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.20" />
+        android:text="Nome do medicamento"
+        android:textSize="30dp"/>
 
-    <TextView
-        android:id="@+id/textViewLab"
-        android:layout_width="350dp"
-        android:layout_height="30dp"
-        android:text="Laboratório responsável"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.30" />
-
-    <TextView
-        android:id="@+id/textViewComponent"
-        android:layout_width="350dp"
-        android:layout_height="30dp"
-        android:text="Princípio ativo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.40" />
-
-    <TextView
-        android:id="@+id/textViewLabel"
-        android:layout_width="350dp"
-        android:layout_height="30dp"
-        android:text="Tarja"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.50" />
-
-    <TextView
-        android:id="@+id/textViewType"
-        android:layout_width="350dp"
-        android:layout_height="30dp"
-        android:text="Tipo de medicamento"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.60" />
--->
     <TextView
         android:id="@+id/textViewExpirationDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Prazo de validade"/>
+        android:text="Prazo de validade"
+        android:textSize="30dp"/>
 
     <TextView
         android:id="@+id/textViewQty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Quantidade"/>
+        android:text="Quantidade"
+        android:textSize="30dp"/>
 
 </LinearLayout>

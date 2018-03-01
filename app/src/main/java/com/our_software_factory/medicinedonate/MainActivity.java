@@ -26,7 +26,6 @@ import java.util.Arrays;
 public class MainActivity extends AppCompatActivity {
 
     private ViewPager mViewPager;
-    private SectionPageAdapter mSectionPageAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +36,6 @@ public class MainActivity extends AppCompatActivity {
 
         if(user != null)
         {
-            mSectionPageAdapter = new SectionPageAdapter(getSupportFragmentManager());
-
             //Set up the ViewPager with the sections adapter
             mViewPager = (ViewPager) findViewById(R.id.container);
             setupViewPager(mViewPager);
@@ -56,8 +53,8 @@ public class MainActivity extends AppCompatActivity {
     {
         SectionPageAdapter adapter = new SectionPageAdapter(getSupportFragmentManager());
 
-        adapter.addFragment(new ViewAdFragment(), "Anúncios");
-        adapter.addFragment(new AddAdFragment(), "Adicionar anúncio");
+        adapter.addFragment(new ViewAdFragment(), "ANUNCIOS");
+        adapter.addFragment(new AddAdFragment(), "MEUS");
 
         viewPager.setAdapter(adapter);
     }
