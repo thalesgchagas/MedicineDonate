@@ -127,3 +127,11 @@ Exibição da lista de anúncios em abas
 Adicionada aba para anúncios pessoais 
 Adicionada nova tela para tela de cadastro de anúncios
 
+# Semana 9
+
+## Atividades desenvolvidas
+
+Aba para gerenciar anúncios, onde são exibidos apenas os anúncios do usuário
+Habilitar edição dos anúncios na aba do usuário
+Botão para adicionar anúncios na aba do usuário
+Adicionado e-mail para contato do anunciante no anúncio

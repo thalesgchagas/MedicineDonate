@@ -90,14 +90,14 @@ public class ViewAdActivity extends AppCompatActivity implements DatePickerDialo
     // TODO include other updatetable parameters
     private boolean updateAd(String id, String medicineName, String expirationDate, String qty)
     {
-        //getting the specified ad reference
-        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("anuncios").child(id);
-
-        //updating ad
-        Ad ad = new Ad(id, medicineName, expirationDate, qty);
-
-        databaseReference.setValue(ad);
-        Toast.makeText(getApplicationContext(), "Anuncio atualizado", Toast.LENGTH_LONG).show();
+//        //getting the specified ad reference
+//        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("anuncios").child(id);
+//
+//        //updating ad
+//        Ad ad = new Ad(id, medicineName, expirationDate, qty);
+//
+//        databaseReference.setValue(ad);
+//        Toast.makeText(getApplicationContext(), "Anuncio atualizado", Toast.LENGTH_LONG).show();
 
         return true;
     }

@@ -5,15 +5,19 @@ public class Ad {
     private String medicineName;
     private String expirationDate;
     private String qty;
+    private String email;
+    private String userId;
 
     public Ad(){}
 
-    public Ad(String adId, String medicineName, String expirationDate, String qty)
+    public Ad(String adId, String medicineName, String expirationDate, String qty, String email, String userId)
     {
         this.adId = adId;
         this.medicineName = medicineName;
         this.expirationDate = expirationDate;
         this.qty = qty;
+        this.email = email;
+        this.userId = userId;
     }
 
     public String getAdId() {
@@ -30,5 +34,13 @@ public class Ad {
 
     public String getQty() {
         return qty;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getUserId() {
+        return userId;
     }
 }

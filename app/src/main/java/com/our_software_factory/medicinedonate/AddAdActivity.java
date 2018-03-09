@@ -11,6 +11,8 @@ import android.widget.DatePicker;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -92,31 +94,31 @@ public class AddAdActivity extends AppCompatActivity implements DatePickerDialog
         saveAdButton = (Button) findViewById(R.id.saveAdButton);
 
         // TODO retrive medicineNameList from firebase here
-        databaseMedicine = FirebaseDatabase.getInstance().getReference("medicamentos");
-
-        databaseMedicine.addListenerForSingleValueEvent(new ValueEventListener() {
-            Medicine medicine;
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                for (DataSnapshot medicineSnapshot : dataSnapshot.getChildren()) {
-                    medicine = medicineSnapshot.getValue(Medicine.class);
-                    if (!medicineList.contains(medicine.getNome()))
-                        medicineList.add(medicine.getNome());
-                }
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                System.out.println("Falha ao recuperar lista de nomes de medicamentos: " + databaseError.getMessage());
-            }
-        });
+//        databaseMedicine = FirebaseDatabase.getInstance().getReference("medicamentos");
+//
+//        databaseMedicine.addListenerForSingleValueEvent(new ValueEventListener() {
+//            Medicine medicine;
+//            @Override
+//            public void onDataChange(DataSnapshot dataSnapshot) {
+//                for (DataSnapshot medicineSnapshot : dataSnapshot.getChildren()) {
+//                    medicine = medicineSnapshot.getValue(Medicine.class);
+//                    if (!medicineList.contains(medicine.getNome()))
+//                        medicineList.add(medicine.getNome());
+//                }
+//            }
+//
+//            @Override
+//            public void onCancelled(DatabaseError databaseError) {
+//                System.out.println("Falha ao recuperar lista de nomes de medicamentos: " + databaseError.getMessage());
+//            }
+//        });
 
         // set adapter to fill the data in suggestion list
-        ArrayAdapter<String> medicineNames = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, medicineList);
-        medicineNameAutoCompleteTextView.setAdapter(medicineNames);
+//        ArrayAdapter<String> medicineNames = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, medicineList);
+//        medicineNameAutoCompleteTextView.setAdapter(medicineNames);
 
         // set threshold value 3 that help us to start the searching from third character
-        medicineNameAutoCompleteTextView.setThreshold(3);
+//        medicineNameAutoCompleteTextView.setThreshold(3);
 
         //adding an onclicklistener to button
         saveAdButton.setOnClickListener(new View.OnClickListener() {
@@ -136,6 +138,8 @@ public class AddAdActivity extends AppCompatActivity implements DatePickerDialog
    * */
     private void addAd()
     {
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
         //getting the values to save
         String medicineName = medicineNameAutoCompleteTextView.getText().toString();
         String expirationDate = expirationDateTextView.getText().toString().trim();
@@ -148,7 +152,7 @@ public class AddAdActivity extends AppCompatActivity implements DatePickerDialog
         String id = databaseAds.push().getKey();
 
         //creating an Ad Object
-        Ad ad = new Ad(id, medicineName, expirationDate, medicineQty);
+        Ad ad = new Ad(id, medicineName, expirationDate, medicineQty, user.getEmail(), user.getUid());
 
         //saving the Ad
         databaseAds.child(id).setValue(ad);

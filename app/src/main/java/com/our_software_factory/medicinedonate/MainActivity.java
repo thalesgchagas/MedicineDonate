@@ -72,14 +72,4 @@ public class MainActivity extends AppCompatActivity {
         LoginManager.getInstance().logOut();
         goLoginScreen();
     }
-
-    public void addButtonClick(View view){
-        Intent intent = new Intent(this, AddAdActivity.class);
-        startActivity(intent);
-    }
-
-    public void viewButtonClick(View view){
-        Intent intent = new Intent(this, ViewAdActivity.class);
-        startActivity(intent);
-    }
 }

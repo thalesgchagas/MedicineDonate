@@ -34,6 +34,7 @@ public class AdList extends ArrayAdapter<Ad> {
 //        TextView textViewType = (TextView) listViewItem.findViewById(R.id.textViewType);
         TextView textViewExpirationDate = (TextView) listViewItem.findViewById(R.id.textViewExpirationDate);
         TextView textViewQty = (TextView) listViewItem.findViewById(R.id.textViewQty);
+        TextView textViewContact = (TextView) listViewItem.findViewById(R.id.textViewContact);
 
         Ad ad = adList.get(position);
 
@@ -45,6 +46,7 @@ public class AdList extends ArrayAdapter<Ad> {
 //        textViewType.setText(ad.getYpe());
         textViewExpirationDate.setText(ad.getExpirationDate());
         textViewQty.setText(ad.getQty());
+        textViewContact.setText(ad.getEmail());
 
         return listViewItem;
     }
